@@ -5,6 +5,15 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Initial list:");
+        getOutput(showList( getData()));
+        System.out.println("Sorted list:");
+        getOutput(showList(getSort(getData())));
+    }
+
     public static ArrayList<String> getData(){
         return new ArrayList<>(Arrays.asList("John","Alice","Robert",
                 "Lise","David","Amanda"));
