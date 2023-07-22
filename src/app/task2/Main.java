@@ -6,6 +6,13 @@ import java.util.List;
 
 public class Main {
 
+    public static void main(String[] args) {
+        System.out.println("Initial list:");
+        getOutput(showList(getData()));
+        System.out.println("List part:");
+        getOutput(showList( getSort(getData())));
+    }
+
     public static List<String> getData(){
         return new ArrayList<>(Arrays.asList("orange", "mango","banana",
                 "apple","kiwi","cherry"));
