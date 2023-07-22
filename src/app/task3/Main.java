@@ -18,4 +18,10 @@ public class Main {
         }
         return result.toString();
     }
+
+    public static LinkedList<String> getProduct(LinkedList<String> list){
+        list.add(0, "plum");
+        list.add(5, "mango");
+        return list;
+    }
 }
