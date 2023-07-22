@@ -2,6 +2,7 @@ package app.task1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Main {
     public static ArrayList<String> getData(){
@@ -17,5 +18,15 @@ public class Main {
             result.append(count).append(") ").append(name).append(" \n");
         }
         return result.toString();
+    }
+
+    public static ArrayList<String> getSort(ArrayList<String> list){
+        list.sort(Comparator.naturalOrder());
+        return list;
+
+    }
+
+    public static void getOutput(String output){
+        System.out.println(output);
     }
 }
