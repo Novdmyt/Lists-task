@@ -20,4 +20,12 @@ public class Main {
         }
         return result.toString();
     }
+
+    public static List<String> getSort(List<String> list){
+        return  list.subList(1,3);
+    }
+
+    public static void getOutput(String output){
+        System.out.println(output);
+    }
 }
