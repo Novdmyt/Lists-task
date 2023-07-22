@@ -24,4 +24,8 @@ public class Main {
         list.add(5, "mango");
         return list;
     }
+
+    public static void getOutput(String output){
+        System.out.println(output);
+    }
 }
