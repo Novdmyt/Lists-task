@@ -8,4 +8,14 @@ public class Main {
     public static LinkedList<String> getData(){
         return new LinkedList<>(Arrays.asList("orange", "grape", "apple","lemon"));
     }
+
+    public static String showList(LinkedList<String> list){
+        StringBuilder result = new StringBuilder();
+        int count = 0;
+        for (String name : list) {
+            count++;
+            result.append(count).append(") ").append(name).append(" \n");
+        }
+        return result.toString();
+    }
 }
